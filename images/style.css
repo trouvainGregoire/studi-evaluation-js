@@ -1,0 +1,10 @@
+/*
+ * Font Face Lato
+ */
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
