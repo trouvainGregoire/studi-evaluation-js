@@ -8,3 +8,98 @@
     font-style: normal;
     font-display: swap;
 }
+
+body {
+    font: normal 18px Lato, Arial, sans-serif;
+    height: 100vh;
+    text-transform: uppercase;
+}
+
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
+.center {
+    justify-content: center;
+}
+
+.icon {
+    filter: invert(72%) sepia(41%) saturate(5740%) hue-rotate(320deg) brightness(114%) contrast(105%);
+}
+
+.col {
+    padding: 0;
+}
+
+.row {
+    padding: 0;
+}
+
+.side-active {
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.side {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.player-board {
+    text-align: center;
+}
+
+#player-one__dash {
+    display: none;
+}
+
+#player-two__dash {
+    display: none;
+}
+
+.player-board__name {
+    margin-right: 10px;
+    font-size: 3em;
+}
+
+.player-board__name, strong {
+    font-weight: normal;
+    color: black;
+}
+
+.player-board__pill {
+    color: salmon;
+}
+
+.player-board__round-score {
+    color: salmon;
+    font-size: 5em;
+}
+
+.player-board__global-score {
+    padding: 10px;
+    background-color: salmon;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+#player-two-global-score, #player-one-global-score {
+    color: white;
+}
+
+.dice-board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
