@@ -2,10 +2,71 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Évaluation Studi - Js</title>
     <link rel="stylesheet" href="images/ionic.min.css">
+    <link rel="stylesheet" href="images/style.css">
 </head>
 <body>
+<div class="row row-center responsive-sm">
+    <div class="col">
+        <div class="row row-center side-active">
+            <div class="col player-board player-board__active">
+                <div class="dice-board">
+                    <div class="row center">
+                        <img src="images/add-circle-outline.svg" alt="icone nouvelle partie" height="40" class="icon">
+                        <button id="new-game" style="top: 10%">NEW GAME</button>
+                    </div>
 
+                    <p style="margin-top: 55%"><img id="dice" src="images/dice-1.svg" alt="">
+                    </p>
+                    <br>
+                    <div class="row center">
+                        <img src="images/sync-outline.svg" alt="icone lancer de dé" height="40" class="icon">
+                        <button id="role-dice">ROLL DICE</button>
+                    </div>
+                    <br>
+                    <div class="row center">
+                        <img src="images/download-outline.svg" alt="icone lancer de dé" height="40" class="icon">
+                        <button id="hold">HOLD</button>
+                    </div>
+                </div>
+                <div class="col col-center">
+                    <p><strong class="player-board__name">Player 1</strong><img id="player-one__dash"
+                                                                                src="images/circle-solid.svg"
+                                                                                height="13" class="icon" alt="icon"></p>
+                </div>
+                <div class="col col-center">
+                    <p class="player-board__round-score" id="player-one-round-score">
+                        0
+                    </p>
+                </div>
+                <div class="col col-center">
+                    <div class="player-board__global-score">
+                        <p>Current</p>
+                        <p id="player-one-global-score">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row row-center side">
+            <div class="col player-board">
+                <p><strong class="player-board__name">Player 2</strong><img id="player-two__dash"
+                                                                            src="images/circle-solid.svg" height="13"
+                                                                            class="icon" alt="icon"></p>
+                <p class="player-board__round-score" id="player-two-round-score">
+                    0
+                </p>
+                <div class="player-board__global-score">
+                    <p>Current</p>
+                    <p id="player-two-global-score">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="images/app.js" type="application/javascript"></script>
 </body>
 </html>
